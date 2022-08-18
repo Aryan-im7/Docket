@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    background-image: linear-gradient(to right top, #114ca6, #007dd1, #00a8d0, #00cda8, #a5f3ab);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    font-size: 3vh;
+}
+
+header,
+form{
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input{
+    width: 20vw;
+    height: 6vh;
+    border: none;
+    font-size: large;
+    outline: none;
+    padding: 0.5rem;
+}   
+
+form button{
+    height: 6vh;
+    width: 3vw;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #007dd1;
+}
+
+form button:hover{
+    color: white;
+    background-color: #007dd1;
+}
+
+.fa-rocket{
+    font-size: 3vh;
+}
+
+.todo-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.todo{
+    display: flex;
+    height: 6vh;
+    width: 20vw;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    color: black;
+    margin: 0.5rem;
+    transition: all 0.2s ease;
+}
+
+.todo li{
+    margin: 0.5rem;
+    flex: 1
+}
+
+.complete-btn,.trash-btn{
+    height: 6vh;
+    width: 3vw;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #007dd1;
+}
+
+.complete-btn:hover,.trash-btn:hover{
+    color: white;
+    background-color: #007dd1;
+}
+
+.completed{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.fa-trash,
+.fa-check{
+    pointer-events: none;
+}
+
+.fall{
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+}
+
+@media only screen and (max-width: 480px) {
+
+    .header{
+        font-size: 2vh;
+    }
+
+    .fa-rocket{
+        font-size: 4vw;
+    }
+
+    form input{
+        height: 5vh;
+        min-height: 30px;
+        width: 60vw;
+    }
+
+    form button{
+        height: 5vh;
+        min-height: 30px;
+        width: 15vw;
+    }
+
+    .todo{
+        width: 60vw;
+        height: 5vh;
+    }
+
+    .complete-btn,.trash-btn{
+        height: 5vh;
+        width: 10vw;
+    }
+}
+
